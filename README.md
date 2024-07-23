@@ -1,6 +1,6 @@
 # Colander: Opinionated experiments in browser tab arbitrage
 
-Colander is an evolving ecosystem of experimental tools, starting with a Firefox extension and Python scripts, that responds to information overload through intelligent browser tab triage and arbitrage. This project combines research-through-design, field philosophy, and critical technical practice to investigate our relationship with digital information spaces, taking the web browser as a site of inquiry.
+Colander is an evolving ecosystem of experimental tools, starting with a Firefox extension and Python scripts, that responds to information overload through "intelligent" browser tab triage and arbitrage. This project combines research-through-design, field philosophy, and critical technical practice to investigate our relationship with digital information spaces, taking the web browser as a site of inquiry.
 
 
 ## Technical components
