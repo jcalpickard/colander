@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Colander",
+    "version": "1.0",
+    "description": "Grabs information from the active tab",
+    "icons": {
+      "48": "icons/icon.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_title": "Colander",
+      "default_popup": "popup/popup.html"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    }
+  }
+  

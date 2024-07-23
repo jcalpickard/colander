@@ -1,8 +1,8 @@
 # TABGRAB2.PY
 # another approach to retrieving the active tab's URL and title
-# because my first prototype didn't have access to real-time information
+# because my first prototypes didn't have access to real-time information
 
-# Trying `pyautogui`, as a way to roll up an ersatz browser user
+# Trying pyautogui, as a way to roll up an ersatz browser user
 
 import pyautogui
 import time

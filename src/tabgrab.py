@@ -20,8 +20,8 @@ import datetime
 # then returns its URL and title
 def get_active_tab_info():
     # Replace with your Firefox profile path
-    profile_path = r"C:\Users\Cal\AppData\Roaming\Mozilla\Firefox\Profiles\e46pq4hi.default"
-    session_file = os.path.join(profile_path, "sessionstore.jsonlz4")
+    profile_path = r"C:\Users\Cal\AppData\Roaming\Mozilla\Firefox\Profiles\m76qq8d6.default-release"
+    session_file = os.path.join(profile_path, r"sessionstore-backups\previous.jsonlz4")
 
     if not os.path.exists(session_file):
         print(f"File not found: {session_file}")
@@ -39,6 +39,7 @@ def get_active_tab_info():
                 return entry.get("url"), entry.get("title")
 
     return None, None
+    pass # This is currently stopping it being appended to the text file?
 
 # Takes the URL and title of the active tab as arguments
 # generates a timestamp
@@ -48,9 +49,10 @@ def save_tab_info(url, title):
     with open("tab_capture.txt", "a") as f:
         f.write(f"{timestamp} - {title}: {url}\n")
 
-url, title = get_active_tab_info()
-if url and title:
-    save_tab_info(url, title)
-    print(f"Captured: {title}")
-else:
-    print("Failed to capture tab info")
+if __name__ == "__main__":
+    url, title = get_active_tab_info()
+    if url and title:
+        save_tab_info(url, title)
+        print(f"Captured: {title}")
+    else:
+        print("Failed to capture tab info")
