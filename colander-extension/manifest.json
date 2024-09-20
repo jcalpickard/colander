@@ -2,12 +2,13 @@
     "manifest_version": 2,
     "name": "Colander",
     "version": "1.0",
-    "description": "Grabs information from the active tab",
+    "description": "Grabs information from multiple tabs",
     "icons": {
       "48": "icons/icon.png"
     },
     "permissions": [
-      "activeTab"
+      "tabs",
+      "nativeMessaging"
     ],
     "browser_action": {
       "default_icon": "icons/icon.png",
@@ -16,6 +17,10 @@
     },
     "background": {
       "scripts": ["background.js"]
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "colander@justinpickard.net"
+      }
     }
-  }
-  
+}
